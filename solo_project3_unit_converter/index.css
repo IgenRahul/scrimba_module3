@@ -1,0 +1,118 @@
+:root {
+  --hero-bg: #6943ff;
+  --main-bg: #1f2937;
+  --btn-bg: #ffffff;
+  --unit-bg: #273549;
+
+  --unit-value-color: #ffffff;
+  --unit-color: #ccc1ff;
+  --btn-color: #3d3d3d;
+
+  --input-border: #b295ff;
+
+  /* --hero-bg same */
+  /* --main-bg-light: #f4f4f4;
+  --unit-bg-light: white;
+  --unit-color-light: #5a537b;
+  --unit-value-color-light: #353535; */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+::placeholder {
+  color: var(--btn-bg);
+  opacity: 1; /* Firefox */
+}
+
+body {
+  font-family: Inter, sans-serif;
+  text-align: center;
+  background: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 96vh;
+}
+
+#theme-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: var(--unit-bg);
+  color: var(--unit-value-color);
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.hero {
+  background: var(--hero-bg);
+  color: var(--btn-bg);
+  min-width: 550px;
+  height: 285px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 32px 0px;
+}
+
+.hero h1 {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 38px;
+}
+
+.hero input {
+  text-align: center;
+  color: var(--btn-bg);
+  background: var(--hero-bg);
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 24.39px;
+  width: 116px;
+  height: 80px;
+  border-radius: 5px;
+  border: 2px var(--input-border) solid;
+}
+.hero button {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 8px 26px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.main {
+  background: var(--main-bg);
+  min-width: 550px;
+  padding: 24px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+.section {
+  background: var(--unit-bg);
+  padding: 32px 0px 18px 0px;
+}
+.section h3 {
+  color: var(--unit-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.section p {
+  color: var(--unit-value-color);
+  font-size: 14px;
+  font-weight: 200;
+}
